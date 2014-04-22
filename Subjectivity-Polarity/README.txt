@@ -1,5 +1,5 @@
 Packages used include: nltk, pandas
-Corpus used: movie review corpus (need to download) and subjectivity dataset (already included)
+Corpus used: movie review corpus (need to download via nltk) and subjectivity dataset (already included)
 
 To do subjectivity and polarity:
 1. Make sure that boeing.csv/intel.csv is in the same folder as this one
