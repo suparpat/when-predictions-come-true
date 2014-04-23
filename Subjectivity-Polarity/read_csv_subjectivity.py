@@ -31,9 +31,9 @@ for index,tweet in enumerate(tweets):
 
     if temp>0.5:
         subjectivity.insert(i,temp)
-        ts2.insert(i,ts[i])
-        userid2.insert(i,userid[i])
-        nb_followers2.insert(i,nb_followers[i])
+        ts2.insert(i,ts[index])
+        userid2.insert(i,userid[index])
+        nb_followers2.insert(i,nb_followers[index])
         i = i + 1
 
 
@@ -41,4 +41,4 @@ for index,tweet in enumerate(tweets):
 #Export sentiments.csv
 combined = zip(ts2,tweets,subjectivity,userid2,nb_followers2)
 df = DataFrame(data = combined, columns = ['ts','text','subjectivity','userid','nb_followers'])
-df.to_csv('subjectivity.csv')
+df.to_csv('subjectivity.csv',index=False)
