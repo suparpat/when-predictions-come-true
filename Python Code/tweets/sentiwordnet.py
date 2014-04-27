@@ -28,6 +28,8 @@ def get_gloss(cols):
 
 
 def get_scores(filepath, word):
+    p_score = 0
+    n_score = 0
     word = word.lower()
     f = open(filepath)
     for line in f:
