@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import statsmodels.tsa.stattools as stat
 #import pprint as pp
-#from pandas import DataFrame, read_csv
+
 # read csv instances
 reader = pd.read_csv("stockprices.csv")
 #day
