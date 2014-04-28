@@ -22,17 +22,18 @@ day = list(day)
 #closeStockPrice
 closeStockPrice = reader.Close;
 
-#changesOfStockPrice
+#openStockPrice
 openStockPrice = reader.Open;
+#changesOfStockPrice
 changesOfStockPrice = openStockPrice - closeStockPrice;
 
-#joint changes of prices and averaged sentiment into a new 2D array by containing days
+#find overlap days in two list
 newlist = set(day) & set(day2)
 newlist = list(newlist)
 
 priceChange = []
 avgSenti = []
-
+#joint changes of prices and averaged sentiment into a new 2D array by containing days
 for i in range(0,len(newlist)):
     x = newlist[i]
     if x in day:
